@@ -1,0 +1,14 @@
+This is a test directory, which is being used to test different models before coming up with an ideal solution. (And also to learn what each algorithm, policy, and training method does depending on the environment).
+
+Requirements for MiniWorld include: 
+Python==3.10
+MiniWorld==2
+NumPy==1.26
+PyTorch==2.3.1
+Stable-baselines==3 with extra
+
+A majority of the neural networks and reinforcement learning algorithms in stable-baselines was written and compiled in torch 2.3.1, and do not support backward
+compatibility with 2.4, thus torch was downgraded. Miniworld environments require python version less that 3.11, specifically, 3.10 for MiniWorld 2 and 3.6-3.9
+for MiniWorld 1. There were also some conflicts with NumPy 2.0.1, namely with ndarray dtypes, thus NumPy was downgraded to 1.26.4
+
+Stable-Baselines was installed using stable-baselines3[extra]. It is a very versatile library, but it deals only with model-free algorithms.
